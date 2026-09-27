@@ -1,0 +1,220 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*GENERAL */
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #fffaf7;
+    color: #3d2f2a;
+    line-height: 1.6;
+}
+
+
+/*HEADER */
+
+header {
+    display: flex;
+    flex-direction: column;
+    padding: 24px;
+    background-color: #fffaf7;
+    border-bottom: 1px solid #eaded8;
+}
+
+.logo {
+    font-family: Georgia, serif;
+    font-size: 28px;
+    font-weight: normal;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #6b4c43;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+nav a:hover {
+    color: #c98288;
+}
+
+
+/* HERO */
+
+.bio-hero {
+    flex-basis: 100%;
+    padding: 70px 25px;
+    background-color: #f8e8e5;
+}
+
+.intro {
+    font-size: 12px;
+    letter-spacing: 3px;
+    color: #a46f73;
+    margin-bottom: 12px;
+}
+
+.bio-hero h2 {
+    font-family: Georgia, serif;
+    font-weight: normal;
+    font-size: 44px;
+    line-height: 1.1;
+    margin-bottom: 18px;
+}
+
+.bio-hero p {
+    max-width: 620px;
+    font-size: 16px;
+    color: #604b45;
+}
+
+
+/* PROJECT SECTION */
+
+.projects-section {
+    padding: 50px 25px;
+}
+
+.projects-section > h2 {
+    font-family: Georgia, serif;
+    font-size: 30px;
+    font-weight: normal;
+    margin-bottom: 30px;
+}
+
+
+/* CARD GRID */
+
+.card-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.card {
+    flex-basis: 100%;
+    background-color: #ffffff;
+    border: 1px solid #eaded8;
+    border-radius: 18px;
+    padding: 28px;
+    min-height: 240px;
+
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(98, 69, 59, 0.12);
+    border-color: #d6aaa9;
+}
+
+
+/* CARD DETAILS */
+
+.tag {
+    display: inline-block;
+    background-color: #f7dddd;
+    color: #8d5b5f;
+    padding: 5px 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    margin-bottom: 25px;
+}
+
+.number {
+    font-family: Georgia, serif;
+    font-size: 14px;
+    color: #c49392;
+    margin-bottom: 6px;
+}
+
+.card h3 {
+    font-family: Georgia, serif;
+    font-size: 25px;
+    font-weight: normal;
+    margin-bottom: 12px;
+}
+
+.card p {
+    color: #6e5952;
+}
+
+
+/* FOOTER */
+
+footer {
+    padding: 45px 25px;
+    background-color: #4a3731;
+    color: #fffaf7;
+}
+
+footer p:first-child {
+    font-family: Georgia, serif;
+    font-size: 26px;
+    margin-bottom: 5px;
+}
+
+
+/* -----------------------
+   DESKTOP
+----------------------- */
+
+@media (min-width: 768px) {
+
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 25px 60px;
+    }
+
+    .logo {
+        margin-bottom: 0;
+    }
+
+    nav {
+        flex-direction: row;
+        gap: 30px;
+    }
+
+    .bio-hero {
+        padding: 110px 60px;
+    }
+
+    .bio-hero h2 {
+        font-size: 68px;
+    }
+
+    .projects-section {
+        padding: 70px 60px;
+    }
+
+    .card-grid {
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 0;
+    }
+
+    .card {
+        flex-basis: 30%;
+    }
+
+    footer {
+        padding: 45px 60px;
+    }
+}
